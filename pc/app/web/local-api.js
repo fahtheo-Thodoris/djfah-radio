@@ -8,7 +8,7 @@
   const RP = (CAP.Plugins && CAP.Plugins.RadioPlayer) || (CAP.registerPlugin && CAP.registerPlugin("RadioPlayer"));
   window.RadioPlayer = RP;
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
   const KEY = "djfah-radio-data";
   const CATALOG_URL = "https://raw.githubusercontent.com/fahtheo-Thodoris/djfah-radio/main/stations.json";
   const RB_HOSTS = ["all.api.radio-browser.info", "de1.api.radio-browser.info", "de2.api.radio-browser.info", "fi1.api.radio-browser.info", "at1.api.radio-browser.info", "nl1.api.radio-browser.info"];

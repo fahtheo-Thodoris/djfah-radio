@@ -481,7 +481,7 @@ function songLi(h, key) {
     el("img", { src: IMG(h.liked ? "DR-33" : "DR-32"), alt: "" }));
   const sp = listBtn(h, key, renderRecent);
   return el("li", {}, el("time", { text: fmtTime(h.ts) }),
-    el("span", { class: "song", title: h.raw }, h.artist ? el("b", { text: h.artist + " — " }) : null, h.title, h.sent ? el("span", { class: "sent", text: " ✓ στη λίστα" }) : null), like, sp);
+    el("span", { class: "song", title: h.raw }, h.artist ? el("b", { text: h.artist + " — " }) : null, h.title ), like, sp);
 }
 function updateLikeBtn(item) {
   const liked = item && item.liked;
@@ -529,9 +529,9 @@ async function copyText(t) {
   catch (e) { const ta = el("textarea"); ta.value = t; document.body.append(ta); ta.select(); const ok = document.execCommand("copy"); ta.remove(); return ok; }
 }
 function listBtn(h, key, after) {
-  return el("button", { class: "icon-btn" + (h.sent ? " done" : ""), "aria-label": h.sent ? "Ξαναστείλε στη λίστα του σταθμού στο Spotify" : "Βάλε το στη λίστα του σταθμού στο Spotify",
-    title: h.sent ? "Είναι ήδη στη λίστα του σταθμού" : "Στη λίστα του σταθμού στο Spotify", onclick: () => addToStationList(h, key, after) },
-    el("img", { src: IMG("DR-38"), alt: "" }));
+  return el("button", { class: "btn ghost small" + (h.sent ? " done" : ""), title: h.sent ? "Είναι ήδη στη λίστα του σταθμού· πάτα για να το ξαναστείλεις" : "Άνοιγμα στο Spotify για τη λίστα του σταθμού",
+    onclick: () => addToStationList(h, key, after) },
+    el("img", { src: IMG("DR-38"), alt: "" }), el("span", { text: h.sent ? "Στη λίστα ✓" : "Στη λίστα Spotify" }));
 }
 /* Ένα τραγούδι στη λίστα «DjFah Radio · Σταθμός», χωρίς λογαριασμό developer.
    Η εφαρμογή αντιγράφει το όνομα της λίστας και ανοίγει το τραγούδι στο Spotify·
@@ -662,7 +662,7 @@ function renderHistory() {
     const del = el("button", { class: "icon-btn del", "aria-label": "Διαγραφή από το αρχείο", title: "Διαγραφή", onclick: () => confirmDelete(k, h), text: "×" });
     tb.append(el("tr", { class: h.liked ? "liked" : "" },
       el("td", { class: "num", text: fmtDate(h.ts) }), el("td", { class: "num", text: fmtTime(h.ts) }),
-      el("td", { class: "art", text: h.artist || "—" }), el("td", {}, h.title, h.sent ? el("span", { class: "sent", text: " ✓ στη λίστα" }) : null),
+      el("td", { class: "art", text: h.artist || "—" }), el("td", { text: h.title }),
       all ? el("td", { class: "stc", text: h.station || "" }) : el("td", { class: "stc", hidden: true }),
       el("td", { class: "acts" }, like, sp, del)));
   }

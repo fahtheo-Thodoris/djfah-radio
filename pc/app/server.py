@@ -31,7 +31,7 @@ import zipfile
 from xml.sax.saxutils import escape as xesc
 
 APP_NAME = "DjFah Radio"
-APP_VERSION = "1.1.0"
+APP_VERSION = "1.2.0"
 PORT = int(os.environ.get("DJFAH_RADIO_PORT", "48231"))
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 WEB_DIR = os.path.join(APP_DIR, "web")
