@@ -1,0 +1,2964 @@
+{
+ "version": "2026-10-14",
+ "genres": {
+  "K": "Κλασική",
+  "J": "Τζαζ",
+  "A": "Εναλλακτική",
+  "I": "Ανεξάρτητος",
+  "C": "Κοινοτικός",
+  "E": "Ηλεκτρονική",
+  "W": "World",
+  "F": "Παραδοσιακή",
+  "R": "Ροκ",
+  "S": "Soul/Groove",
+  "X": "Πολιτιστικός"
+ },
+ "countries": [
+  {
+   "cc": "GR",
+   "name": "Ελλάδα"
+  },
+  {
+   "cc": "CY",
+   "name": "Κύπρος"
+  },
+  {
+   "cc": "GB",
+   "name": "Ην. Βασίλειο"
+  },
+  {
+   "cc": "IE",
+   "name": "Ιρλανδία"
+  },
+  {
+   "cc": "FR",
+   "name": "Γαλλία"
+  },
+  {
+   "cc": "DE",
+   "name": "Γερμανία"
+  },
+  {
+   "cc": "AT",
+   "name": "Αυστρία"
+  },
+  {
+   "cc": "CH",
+   "name": "Ελβετία"
+  },
+  {
+   "cc": "IT",
+   "name": "Ιταλία"
+  },
+  {
+   "cc": "ES",
+   "name": "Ισπανία"
+  },
+  {
+   "cc": "PT",
+   "name": "Πορτογαλία"
+  },
+  {
+   "cc": "NL",
+   "name": "Ολλανδία"
+  },
+  {
+   "cc": "BE",
+   "name": "Βέλγιο"
+  },
+  {
+   "cc": "DK",
+   "name": "Δανία"
+  },
+  {
+   "cc": "SE",
+   "name": "Σουηδία"
+  },
+  {
+   "cc": "NO",
+   "name": "Νορβηγία"
+  },
+  {
+   "cc": "FI",
+   "name": "Φινλανδία"
+  },
+  {
+   "cc": "IS",
+   "name": "Ισλανδία"
+  },
+  {
+   "cc": "PL",
+   "name": "Πολωνία"
+  },
+  {
+   "cc": "CZ",
+   "name": "Τσεχία"
+  },
+  {
+   "cc": "SK",
+   "name": "Σλοβακία"
+  },
+  {
+   "cc": "HU",
+   "name": "Ουγγαρία"
+  },
+  {
+   "cc": "RO",
+   "name": "Ρουμανία"
+  },
+  {
+   "cc": "BG",
+   "name": "Βουλγαρία"
+  },
+  {
+   "cc": "RS",
+   "name": "Σερβία"
+  },
+  {
+   "cc": "HR",
+   "name": "Κροατία"
+  },
+  {
+   "cc": "SI",
+   "name": "Σλοβενία"
+  },
+  {
+   "cc": "EE",
+   "name": "Εσθονία"
+  },
+  {
+   "cc": "LV",
+   "name": "Λετονία"
+  },
+  {
+   "cc": "LT",
+   "name": "Λιθουανία"
+  },
+  {
+   "cc": "UA",
+   "name": "Ουκρανία"
+  },
+  {
+   "cc": "TR",
+   "name": "Τουρκία"
+  },
+  {
+   "cc": "IL",
+   "name": "Ισραήλ"
+  },
+  {
+   "cc": "US",
+   "name": "ΗΠΑ"
+  },
+  {
+   "cc": "CA",
+   "name": "Καναδάς"
+  },
+  {
+   "cc": "MX",
+   "name": "Μεξικό"
+  },
+  {
+   "cc": "BR",
+   "name": "Βραζιλία"
+  },
+  {
+   "cc": "AR",
+   "name": "Αργεντινή"
+  },
+  {
+   "cc": "CL",
+   "name": "Χιλή"
+  },
+  {
+   "cc": "CO",
+   "name": "Κολομβία"
+  },
+  {
+   "cc": "PE",
+   "name": "Περού"
+  },
+  {
+   "cc": "JP",
+   "name": "Ιαπωνία"
+  },
+  {
+   "cc": "KR",
+   "name": "Ν. Κορέα"
+  },
+  {
+   "cc": "TW",
+   "name": "Ταϊβάν"
+  },
+  {
+   "cc": "AU",
+   "name": "Αυστραλία"
+  },
+  {
+   "cc": "NZ",
+   "name": "Ν. Ζηλανδία"
+  },
+  {
+   "cc": "ZA",
+   "name": "Νότια Αφρική"
+  },
+  {
+   "cc": "IN",
+   "name": "Ινδία"
+  },
+  {
+   "cc": "LU",
+   "name": "Λουξεμβούργο"
+  },
+  {
+   "cc": "RU",
+   "name": "Ρωσία"
+  }
+ ],
+ "stations": [
+  {
+   "k": "gr:ερτ-τριτο-προγραμμα",
+   "n": "ΕΡΤ Τρίτο Πρόγραμμα",
+   "cc": "GR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Trito Programma",
+    "Τρίτο Πρόγραμμα",
+    "ERT Trito",
+    "ΕΡΤ Τρίτο Πρόγραμμα"
+   ]
+  },
+  {
+   "k": "gr:ερτ-δευτερο-προγραμμα",
+   "n": "ΕΡΤ Δεύτερο Πρόγραμμα",
+   "cc": "GR",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Deftero Programma",
+    "Δεύτερο Πρόγραμμα",
+    "ERT Deftero",
+    "ΕΡΤ Δεύτερο Πρόγραμμα"
+   ]
+  },
+  {
+   "k": "gr:kosmos-93-6",
+   "n": "Kosmos 93.6",
+   "cc": "GR",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "Kosmos",
+    "Kosmos 93.6"
+   ]
+  },
+  {
+   "k": "gr:en-lefko-87-7",
+   "n": "En Lefko 87.7",
+   "cc": "GR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "En Lefko",
+    "Εν Λευκώ",
+    "En Lefko 87.7"
+   ]
+  },
+  {
+   "k": "gr:dromos-fm",
+   "n": "Dromos FM",
+   "cc": "GR",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Dromos",
+    "Dromos FM"
+   ]
+  },
+  {
+   "k": "gr:μελωδια-99-2",
+   "n": "Μελωδία 99.2",
+   "cc": "GR",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Melodia",
+    "Μελωδία",
+    "Μελωδία 99.2"
+   ]
+  },
+  {
+   "k": "gr:rock-fm-96-9",
+   "n": "Rock FM 96.9",
+   "cc": "GR",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Rock FM",
+    "Rock FM 96.9"
+   ]
+  },
+  {
+   "k": "gr:imagine-89-7",
+   "n": "Imagine 89.7 (Θεσσαλονίκη)",
+   "cc": "GR",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Imagine 89.7",
+    "Imagine"
+   ]
+  },
+  {
+   "k": "gr:athens-voice-radio-102-5",
+   "n": "Athens Voice Radio 102.5",
+   "cc": "GR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Athens Voice",
+    "Athens Voice Radio 102.5",
+    "Athens Voice Radio"
+   ]
+  },
+  {
+   "k": "gr:pepper-96-6",
+   "n": "Pepper 96.6",
+   "cc": "GR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Pepper",
+    "Pepper 96.6"
+   ]
+  },
+  {
+   "k": "gr:radio-paranoise",
+   "n": "Radio Paranoise",
+   "cc": "GR",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Paranoise",
+    "Radio Paranoise"
+   ]
+  },
+  {
+   "k": "cy:ρικ-τριτο-προγραμμα",
+   "n": "ΡΙΚ Τρίτο Πρόγραμμα",
+   "cc": "CY",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "RIK Trito",
+    "RIK 3",
+    "Τρίτο Πρόγραμμα",
+    "ΡΙΚ Τρίτο Πρόγραμμα"
+   ]
+  },
+  {
+   "k": "cy:rik-classic",
+   "n": "RIK Classic",
+   "cc": "CY",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "RIK Classic"
+   ]
+  },
+  {
+   "k": "gb:bbc-radio-3",
+   "n": "BBC Radio 3",
+   "cc": "GB",
+   "g": "K",
+   "hq": true,
+   "q": [
+    "BBC Radio 3"
+   ]
+  },
+  {
+   "k": "gb:bbc-radio-6-music",
+   "n": "BBC Radio 6 Music",
+   "cc": "GB",
+   "g": "A",
+   "hq": true,
+   "q": [
+    "BBC Radio 6 Music"
+   ]
+  },
+  {
+   "k": "gb:nts-radio-1",
+   "n": "NTS Radio 1",
+   "cc": "GB",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "NTS Radio 1"
+   ]
+  },
+  {
+   "k": "gb:nts-radio-2",
+   "n": "NTS Radio 2",
+   "cc": "GB",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "NTS Radio 2"
+   ]
+  },
+  {
+   "k": "gb:resonance-fm",
+   "n": "Resonance FM",
+   "cc": "GB",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Resonance FM"
+   ]
+  },
+  {
+   "k": "gb:soho-radio",
+   "n": "Soho Radio",
+   "cc": "GB",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Soho Radio"
+   ]
+  },
+  {
+   "k": "gb:jazz-fm",
+   "n": "Jazz FM",
+   "cc": "GB",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Jazz FM"
+   ]
+  },
+  {
+   "k": "gb:scala-radio",
+   "n": "Scala Radio",
+   "cc": "GB",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Scala Radio"
+   ]
+  },
+  {
+   "k": "gb:rinse-fm",
+   "n": "Rinse FM",
+   "cc": "GB",
+   "g": "E",
+   "hq": false,
+   "q": [
+    "Rinse FM"
+   ]
+  },
+  {
+   "k": "gb:radio-caroline",
+   "n": "Radio Caroline",
+   "cc": "GB",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Radio Caroline"
+   ]
+  },
+  {
+   "k": "gb:radio-x",
+   "n": "Radio X",
+   "cc": "GB",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio X"
+   ]
+  },
+  {
+   "k": "gb:amazing-radio",
+   "n": "Amazing Radio",
+   "cc": "GB",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Amazing Radio"
+   ]
+  },
+  {
+   "k": "gb:boogaloo-radio",
+   "n": "Boogaloo Radio",
+   "cc": "GB",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Boogaloo Radio"
+   ]
+  },
+  {
+   "k": "gb:totally-wired-radio",
+   "n": "Totally Wired Radio",
+   "cc": "GB",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Totally Wired Radio"
+   ]
+  },
+  {
+   "k": "ie:rte-lyric-fm",
+   "n": "RTÉ lyric fm",
+   "cc": "IE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "lyric fm",
+    "RTE lyric",
+    "RTÉ lyric fm"
+   ]
+  },
+  {
+   "k": "ie:rte-2xm",
+   "n": "RTÉ 2XM",
+   "cc": "IE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "2XM",
+    "RTÉ 2XM"
+   ]
+  },
+  {
+   "k": "ie:rte-pulse",
+   "n": "RTÉ Pulse",
+   "cc": "IE",
+   "g": "E",
+   "hq": false,
+   "q": [
+    "RTE Pulse",
+    "Pulse",
+    "RTÉ Pulse"
+   ]
+  },
+  {
+   "k": "ie:dublin-digital-radio",
+   "n": "Dublin Digital Radio",
+   "cc": "IE",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Dublin Digital Radio"
+   ]
+  },
+  {
+   "k": "ie:near-fm",
+   "n": "Near FM",
+   "cc": "IE",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Near FM"
+   ]
+  },
+  {
+   "k": "fr:france-musique",
+   "n": "France Musique",
+   "cc": "FR",
+   "g": "K",
+   "hq": true,
+   "q": [
+    "France Musique"
+   ]
+  },
+  {
+   "k": "fr:fip",
+   "n": "FIP",
+   "cc": "FR",
+   "g": "X",
+   "hq": true,
+   "q": [
+    "FIP"
+   ]
+  },
+  {
+   "k": "fr:fip-jazz",
+   "n": "FIP Jazz",
+   "cc": "FR",
+   "g": "J",
+   "hq": true,
+   "q": [
+    "FIP Jazz"
+   ]
+  },
+  {
+   "k": "fr:fip-groove",
+   "n": "FIP Groove",
+   "cc": "FR",
+   "g": "S",
+   "hq": true,
+   "q": [
+    "FIP Groove"
+   ]
+  },
+  {
+   "k": "fr:fip-monde",
+   "n": "FIP Monde",
+   "cc": "FR",
+   "g": "W",
+   "hq": true,
+   "q": [
+    "FIP Monde"
+   ]
+  },
+  {
+   "k": "fr:fip-electro",
+   "n": "FIP Electro",
+   "cc": "FR",
+   "g": "E",
+   "hq": true,
+   "q": [
+    "FIP Electro"
+   ]
+  },
+  {
+   "k": "fr:radio-nova",
+   "n": "Radio Nova",
+   "cc": "FR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Nova"
+   ]
+  },
+  {
+   "k": "fr:tsf-jazz",
+   "n": "TSF Jazz",
+   "cc": "FR",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "TSF Jazz"
+   ]
+  },
+  {
+   "k": "fr:radio-meuh",
+   "n": "Radio Meuh",
+   "cc": "FR",
+   "g": "S",
+   "hq": false,
+   "q": [
+    "Meuh",
+    "Radio Meuh"
+   ]
+  },
+  {
+   "k": "fr:radio-grenouille",
+   "n": "Radio Grenouille",
+   "cc": "FR",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Grenouille"
+   ]
+  },
+  {
+   "k": "fr:oui-fm",
+   "n": "OÜI FM",
+   "cc": "FR",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "OÜI FM"
+   ]
+  },
+  {
+   "k": "fr:djam-radio",
+   "n": "Djam Radio",
+   "cc": "FR",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "Djam Radio"
+   ]
+  },
+  {
+   "k": "fr:radio-campus-paris",
+   "n": "Radio Campus Paris",
+   "cc": "FR",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Campus Paris"
+   ]
+  },
+  {
+   "k": "de:br-klassik",
+   "n": "BR-Klassik",
+   "cc": "DE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "BR-Klassik",
+    "BR Klassik"
+   ]
+  },
+  {
+   "k": "de:wdr-3",
+   "n": "WDR 3",
+   "cc": "DE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "WDR 3"
+   ]
+  },
+  {
+   "k": "de:ndr-kultur",
+   "n": "NDR Kultur",
+   "cc": "DE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "NDR Kultur"
+   ]
+  },
+  {
+   "k": "de:swr2",
+   "n": "SWR2",
+   "cc": "DE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "SWR2"
+   ]
+  },
+  {
+   "k": "de:hr2-kultur",
+   "n": "hr2-kultur",
+   "cc": "DE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "hr2-kultur"
+   ]
+  },
+  {
+   "k": "de:radioeins",
+   "n": "radioeins",
+   "cc": "DE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "radioeins"
+   ]
+  },
+  {
+   "k": "de:bytefm",
+   "n": "ByteFM",
+   "cc": "DE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "ByteFM"
+   ]
+  },
+  {
+   "k": "de:fluxfm",
+   "n": "FluxFM",
+   "cc": "DE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "FluxFM"
+   ]
+  },
+  {
+   "k": "de:cashmere-radio",
+   "n": "Cashmere Radio",
+   "cc": "DE",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Cashmere Radio"
+   ]
+  },
+  {
+   "k": "de:refuge-worldwide",
+   "n": "Refuge Worldwide",
+   "cc": "DE",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Refuge Worldwide"
+   ]
+  },
+  {
+   "k": "de:wdr-cosmo",
+   "n": "WDR COSMO",
+   "cc": "DE",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "COSMO",
+    "WDR Cosmo",
+    "WDR COSMO"
+   ]
+  },
+  {
+   "k": "de:egofm",
+   "n": "egoFM",
+   "cc": "DE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "egoFM"
+   ]
+  },
+  {
+   "k": "de:detektor-fm",
+   "n": "detektor.fm",
+   "cc": "DE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "detektor.fm"
+   ]
+  },
+  {
+   "k": "at:o1",
+   "n": "Ö1",
+   "cc": "AT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Ö1",
+    "OE1",
+    "Oe1"
+   ]
+  },
+  {
+   "k": "at:fm4",
+   "n": "FM4",
+   "cc": "AT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "FM4"
+   ]
+  },
+  {
+   "k": "at:radio-stephansdom",
+   "n": "Radio Stephansdom",
+   "cc": "AT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Stephansdom"
+   ]
+  },
+  {
+   "k": "at:radio-orange-94-0",
+   "n": "Radio Orange 94.0",
+   "cc": "AT",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Orange 94.0",
+    "Orange 94",
+    "Radio Orange 94.0",
+    "Radio Orange"
+   ]
+  },
+  {
+   "k": "at:radio-fro",
+   "n": "Radio FRO",
+   "cc": "AT",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio FRO"
+   ]
+  },
+  {
+   "k": "at:radio-helsinki",
+   "n": "Radio Helsinki (Graz)",
+   "cc": "AT",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Helsinki"
+   ]
+  },
+  {
+   "k": "at:radio-superfly",
+   "n": "Radio Superfly",
+   "cc": "AT",
+   "g": "S",
+   "hq": false,
+   "q": [
+    "Radio Superfly"
+   ]
+  },
+  {
+   "k": "ch:radio-swiss-classic",
+   "n": "Radio Swiss Classic",
+   "cc": "CH",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Swiss Classic",
+    "Swiss Classic"
+   ]
+  },
+  {
+   "k": "ch:radio-swiss-jazz",
+   "n": "Radio Swiss Jazz",
+   "cc": "CH",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Radio Swiss Jazz",
+    "Swiss Jazz"
+   ]
+  },
+  {
+   "k": "ch:srf-2-kultur",
+   "n": "SRF 2 Kultur",
+   "cc": "CH",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "SRF 2 Kultur"
+   ]
+  },
+  {
+   "k": "ch:espace-2",
+   "n": "Espace 2",
+   "cc": "CH",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Espace 2"
+   ]
+  },
+  {
+   "k": "ch:rsi-rete-due",
+   "n": "RSI Rete Due",
+   "cc": "CH",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "RSI Rete Due"
+   ]
+  },
+  {
+   "k": "ch:couleur-3",
+   "n": "Couleur 3",
+   "cc": "CH",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Couleur 3"
+   ]
+  },
+  {
+   "k": "ch:radio-x",
+   "n": "Radio X (Basel)",
+   "cc": "CH",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio X"
+   ]
+  },
+  {
+   "k": "ch:radio-lora",
+   "n": "Radio LoRa",
+   "cc": "CH",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio LoRa"
+   ]
+  },
+  {
+   "k": "ch:gds-fm",
+   "n": "GDS.FM",
+   "cc": "CH",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "GDS.FM"
+   ]
+  },
+  {
+   "k": "ch:radio-3fach",
+   "n": "Radio 3FACH (Λουκέρνη)",
+   "cc": "CH",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio 3FACH"
+   ]
+  },
+  {
+   "k": "it:rai-radio-3",
+   "n": "Rai Radio 3",
+   "cc": "IT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Rai Radio 3"
+   ]
+  },
+  {
+   "k": "it:rai-radio-classica",
+   "n": "Rai Radio Classica",
+   "cc": "IT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Rai Radio Classica"
+   ]
+  },
+  {
+   "k": "it:radio-classica",
+   "n": "Radio Classica",
+   "cc": "IT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Classica"
+   ]
+  },
+  {
+   "k": "it:radio-popolare",
+   "n": "Radio Popolare",
+   "cc": "IT",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Radio Popolare"
+   ]
+  },
+  {
+   "k": "it:radio-raheem",
+   "n": "Radio Raheem",
+   "cc": "IT",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Radio Raheem"
+   ]
+  },
+  {
+   "k": "it:radio-citta-fujiko",
+   "n": "Radio Città Fujiko",
+   "cc": "IT",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Città Fujiko"
+   ]
+  },
+  {
+   "k": "it:radio-citta-del-capo",
+   "n": "Radio Città del Capo",
+   "cc": "IT",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Città del Capo"
+   ]
+  },
+  {
+   "k": "es:radio-clasica",
+   "n": "Radio Clásica (RNE)",
+   "cc": "ES",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Clásica",
+    "Clásica"
+   ]
+  },
+  {
+   "k": "es:radio-3",
+   "n": "Radio 3 (RNE)",
+   "cc": "ES",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio 3"
+   ]
+  },
+  {
+   "k": "es:catalunya-musica",
+   "n": "Catalunya Música",
+   "cc": "ES",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Catalunya Música"
+   ]
+  },
+  {
+   "k": "es:icat",
+   "n": "iCat",
+   "cc": "ES",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "iCat"
+   ]
+  },
+  {
+   "k": "es:radio-gladys-palmera",
+   "n": "Radio Gladys Palmera",
+   "cc": "ES",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "Radio Gladys Palmera"
+   ]
+  },
+  {
+   "k": "es:scanner-fm",
+   "n": "Scanner FM",
+   "cc": "ES",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Scanner FM"
+   ]
+  },
+  {
+   "k": "pt:antena-2",
+   "n": "Antena 2",
+   "cc": "PT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Antena 2"
+   ]
+  },
+  {
+   "k": "pt:antena-3",
+   "n": "Antena 3",
+   "cc": "PT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Antena 3"
+   ]
+  },
+  {
+   "k": "pt:radio-quantica",
+   "n": "Rádio Quântica",
+   "cc": "PT",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Rádio Quântica"
+   ]
+  },
+  {
+   "k": "pt:radar-97-8",
+   "n": "Radar 97.8",
+   "cc": "PT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radar 97.8",
+    "Radar"
+   ]
+  },
+  {
+   "k": "pt:radio-oxigenio",
+   "n": "Rádio Oxigénio",
+   "cc": "PT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Rádio Oxigénio"
+   ]
+  },
+  {
+   "k": "pt:sbsr-fm",
+   "n": "SBSR.fm",
+   "cc": "PT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "SBSR.fm"
+   ]
+  },
+  {
+   "k": "nl:npo-klassiek",
+   "n": "NPO Klassiek",
+   "cc": "NL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "NPO Klassiek"
+   ]
+  },
+  {
+   "k": "nl:npo-soul-jazz",
+   "n": "NPO Soul & Jazz",
+   "cc": "NL",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "NPO Soul & Jazz"
+   ]
+  },
+  {
+   "k": "nl:concertzender",
+   "n": "Concertzender",
+   "cc": "NL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Concertzender"
+   ]
+  },
+  {
+   "k": "nl:intergalactic-fm",
+   "n": "Intergalactic FM",
+   "cc": "NL",
+   "g": "E",
+   "hq": false,
+   "q": [
+    "Intergalactic FM"
+   ]
+  },
+  {
+   "k": "nl:kink",
+   "n": "KINK",
+   "cc": "NL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "KINK"
+   ]
+  },
+  {
+   "k": "nl:pinguin-radio",
+   "n": "Pinguin Radio",
+   "cc": "NL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Pinguin Radio"
+   ]
+  },
+  {
+   "k": "nl:sublime",
+   "n": "Sublime",
+   "cc": "NL",
+   "g": "S",
+   "hq": false,
+   "q": [
+    "Sublime"
+   ]
+  },
+  {
+   "k": "nl:npo-3fm",
+   "n": "NPO 3FM",
+   "cc": "NL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "NPO 3FM"
+   ]
+  },
+  {
+   "k": "nl:funx",
+   "n": "FunX",
+   "cc": "NL",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "FunX"
+   ]
+  },
+  {
+   "k": "be:klara",
+   "n": "Klara",
+   "cc": "BE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Klara"
+   ]
+  },
+  {
+   "k": "be:musiq3",
+   "n": "Musiq3",
+   "cc": "BE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Musiq3"
+   ]
+  },
+  {
+   "k": "be:classic-21",
+   "n": "Classic 21",
+   "cc": "BE",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Classic 21"
+   ]
+  },
+  {
+   "k": "be:studio-brussel",
+   "n": "Studio Brussel",
+   "cc": "BE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Studio Brussel"
+   ]
+  },
+  {
+   "k": "be:tipik",
+   "n": "Tipik",
+   "cc": "BE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Tipik"
+   ]
+  },
+  {
+   "k": "be:kiosk-radio",
+   "n": "Kiosk Radio",
+   "cc": "BE",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Kiosk Radio"
+   ]
+  },
+  {
+   "k": "be:the-word-radio",
+   "n": "The Word Radio",
+   "cc": "BE",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "The Word Radio"
+   ]
+  },
+  {
+   "k": "be:radio-panik",
+   "n": "Radio Panik",
+   "cc": "BE",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Panik"
+   ]
+  },
+  {
+   "k": "be:radio-campus-bruxelles",
+   "n": "Radio Campus Bruxelles",
+   "cc": "BE",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Campus Bruxelles"
+   ]
+  },
+  {
+   "k": "dk:dr-p2-klassisk",
+   "n": "DR P2 Klassisk",
+   "cc": "DK",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "P2 Klassisk",
+    "DR P2",
+    "DR P2 Klassisk"
+   ]
+  },
+  {
+   "k": "dk:dr-p8-jazz",
+   "n": "DR P8 Jazz",
+   "cc": "DK",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "P8 Jazz",
+    "DR P8 Jazz"
+   ]
+  },
+  {
+   "k": "dk:dr-p6-beat",
+   "n": "DR P6 Beat",
+   "cc": "DK",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "P6 Beat",
+    "DR P6 Beat"
+   ]
+  },
+  {
+   "k": "dk:the-lake-radio",
+   "n": "The Lake Radio",
+   "cc": "DK",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "The Lake Radio"
+   ]
+  },
+  {
+   "k": "se:sveriges-radio-p2",
+   "n": "Sveriges Radio P2",
+   "cc": "SE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "P2",
+    "Sveriges Radio P2"
+   ]
+  },
+  {
+   "k": "se:sveriges-radio-p3",
+   "n": "Sveriges Radio P3",
+   "cc": "SE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "P3",
+    "Sveriges Radio P3"
+   ]
+  },
+  {
+   "k": "se:bandit-rock",
+   "n": "Bandit Rock",
+   "cc": "SE",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Bandit Rock"
+   ]
+  },
+  {
+   "k": "no:nrk-klassisk",
+   "n": "NRK Klassisk",
+   "cc": "NO",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "NRK Klassisk"
+   ]
+  },
+  {
+   "k": "no:nrk-jazz",
+   "n": "NRK Jazz",
+   "cc": "NO",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "NRK Jazz"
+   ]
+  },
+  {
+   "k": "no:nrk-folkemusikk",
+   "n": "NRK Folkemusikk",
+   "cc": "NO",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "NRK Folkemusikk"
+   ]
+  },
+  {
+   "k": "no:radio-nova",
+   "n": "Radio Nova (Όσλο)",
+   "cc": "NO",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Nova"
+   ]
+  },
+  {
+   "k": "fi:yle-klassinen",
+   "n": "Yle Klassinen",
+   "cc": "FI",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Yle Klassinen"
+   ]
+  },
+  {
+   "k": "fi:yle-radio-1",
+   "n": "Yle Radio 1",
+   "cc": "FI",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Yle Radio 1"
+   ]
+  },
+  {
+   "k": "fi:radio-helsinki",
+   "n": "Radio Helsinki",
+   "cc": "FI",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Radio Helsinki"
+   ]
+  },
+  {
+   "k": "fi:yle-x3m",
+   "n": "Yle X3M",
+   "cc": "FI",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Yle X3M"
+   ]
+  },
+  {
+   "k": "is:ruv-ras-1",
+   "n": "RÚV Rás 1",
+   "cc": "IS",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Rás 1",
+    "Ras 1",
+    "RÚV Rás 1"
+   ]
+  },
+  {
+   "k": "is:ruv-ras-2",
+   "n": "RÚV Rás 2",
+   "cc": "IS",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Rás 2",
+    "Ras 2",
+    "RÚV Rás 2"
+   ]
+  },
+  {
+   "k": "pl:polskie-radio-dwojka",
+   "n": "Polskie Radio Dwójka",
+   "cc": "PL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Dwójka",
+    "Polskie Radio Dwojka",
+    "Polskie Radio Dwójka"
+   ]
+  },
+  {
+   "k": "pl:polskie-radio-trojka",
+   "n": "Polskie Radio Trójka",
+   "cc": "PL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Trójka",
+    "Polskie Radio Trojka",
+    "Polskie Radio Trójka"
+   ]
+  },
+  {
+   "k": "pl:radio-nowy-swiat",
+   "n": "Radio Nowy Świat",
+   "cc": "PL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Nowy Świat"
+   ]
+  },
+  {
+   "k": "pl:radio-357",
+   "n": "Radio 357",
+   "cc": "PL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio 357"
+   ]
+  },
+  {
+   "k": "pl:rmf-classic",
+   "n": "RMF Classic",
+   "cc": "PL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "RMF Classic"
+   ]
+  },
+  {
+   "k": "pl:radio-kampus",
+   "n": "Radio Kampus",
+   "cc": "PL",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Kampus"
+   ]
+  },
+  {
+   "k": "pl:radio-afera",
+   "n": "Radio Afera",
+   "cc": "PL",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Afera"
+   ]
+  },
+  {
+   "k": "cz:cro-vltava",
+   "n": "ČRo Vltava",
+   "cc": "CZ",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Vltava",
+    "ČRo Vltava"
+   ]
+  },
+  {
+   "k": "cz:cro-d-dur",
+   "n": "ČRo D-dur",
+   "cc": "CZ",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "D-dur",
+    "ČRo D-dur"
+   ]
+  },
+  {
+   "k": "cz:cro-jazz",
+   "n": "ČRo Jazz",
+   "cc": "CZ",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "ČRo Jazz",
+    "CRo Jazz"
+   ]
+  },
+  {
+   "k": "cz:radio-wave",
+   "n": "Radio Wave",
+   "cc": "CZ",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Wave"
+   ]
+  },
+  {
+   "k": "cz:radio-1",
+   "n": "Radio 1 (Πράγα)",
+   "cc": "CZ",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio 1"
+   ]
+  },
+  {
+   "k": "sk:radio-devin",
+   "n": "Rádio Devín",
+   "cc": "SK",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Rádio Devín"
+   ]
+  },
+  {
+   "k": "sk:radio-fm",
+   "n": "Rádio_FM",
+   "cc": "SK",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Rádio FM",
+    "Radio_FM",
+    "Rádio_FM"
+   ]
+  },
+  {
+   "k": "hu:bartok-radio",
+   "n": "Bartók Rádió",
+   "cc": "HU",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Bartók Rádió"
+   ]
+  },
+  {
+   "k": "hu:tilos-radio",
+   "n": "Tilos Rádió",
+   "cc": "HU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Tilos Rádió"
+   ]
+  },
+  {
+   "k": "hu:jazzy-radio",
+   "n": "Jazzy Rádió",
+   "cc": "HU",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Jazzy Rádió"
+   ]
+  },
+  {
+   "k": "hu:petofi-radio",
+   "n": "Petőfi Rádió",
+   "cc": "HU",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Petőfi Rádió"
+   ]
+  },
+  {
+   "k": "ro:radio-romania-muzical",
+   "n": "Radio România Muzical",
+   "cc": "RO",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "România Muzical",
+    "Romania Muzical",
+    "Radio România Muzical"
+   ]
+  },
+  {
+   "k": "ro:radio-romania-cultural",
+   "n": "Radio România Cultural",
+   "cc": "RO",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "România Cultural",
+    "Romania Cultural",
+    "Radio România Cultural"
+   ]
+  },
+  {
+   "k": "ro:radio-guerrilla",
+   "n": "Radio Guerrilla",
+   "cc": "RO",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Guerrilla"
+   ]
+  },
+  {
+   "k": "bg:bnr-hristo-botev",
+   "n": "BNR Hristo Botev",
+   "cc": "BG",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Hristo Botev",
+    "Христо Ботев",
+    "BNR Hristo Botev"
+   ]
+  },
+  {
+   "k": "bg:jazz-fm-bulgaria",
+   "n": "Jazz FM Bulgaria",
+   "cc": "BG",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Jazz FM Bulgaria"
+   ]
+  },
+  {
+   "k": "bg:z-rock",
+   "n": "Z-Rock",
+   "cc": "BG",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Z-Rock"
+   ]
+  },
+  {
+   "k": "rs:radio-beograd-3",
+   "n": "Radio Beograd 3",
+   "cc": "RS",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Beograd 3",
+    "Радио Београд 3",
+    "Radio Beograd 3"
+   ]
+  },
+  {
+   "k": "rs:radio-beograd-2",
+   "n": "Radio Beograd 2",
+   "cc": "RS",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Beograd 2",
+    "Радио Београд 2",
+    "Radio Beograd 2"
+   ]
+  },
+  {
+   "k": "rs:radio-beograd-202",
+   "n": "Radio Beograd 202",
+   "cc": "RS",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Beograd 202",
+    "202",
+    "Radio Beograd 202"
+   ]
+  },
+  {
+   "k": "rs:radio-laguna",
+   "n": "Radio Laguna",
+   "cc": "RS",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Radio Laguna"
+   ]
+  },
+  {
+   "k": "hr:hr3-treci-program",
+   "n": "HR3 Treći program",
+   "cc": "HR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "HR 3",
+    "Treći program",
+    "HR3",
+    "HR3 Treći program"
+   ]
+  },
+  {
+   "k": "hr:yammat-fm",
+   "n": "Yammat FM",
+   "cc": "HR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Yammat FM"
+   ]
+  },
+  {
+   "k": "hr:radio-student-zagreb",
+   "n": "Radio Student Zagreb",
+   "cc": "HR",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Student Zagreb"
+   ]
+  },
+  {
+   "k": "si:radio-ars",
+   "n": "Radio Ars",
+   "cc": "SI",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Ars"
+   ]
+  },
+  {
+   "k": "si:val-202",
+   "n": "Val 202",
+   "cc": "SI",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Val 202"
+   ]
+  },
+  {
+   "k": "si:radio-student",
+   "n": "Radio Študent",
+   "cc": "SI",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio Študent"
+   ]
+  },
+  {
+   "k": "ee:klassikaraadio",
+   "n": "Klassikaraadio",
+   "cc": "EE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Klassikaraadio"
+   ]
+  },
+  {
+   "k": "ee:raadio-2",
+   "n": "Raadio 2",
+   "cc": "EE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Raadio 2"
+   ]
+  },
+  {
+   "k": "lv:lr3-klasika",
+   "n": "LR3 Klasika",
+   "cc": "LV",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "LR3",
+    "Klasika",
+    "LR3 Klasika"
+   ]
+  },
+  {
+   "k": "lv:radio-naba",
+   "n": "Radio NABA",
+   "cc": "LV",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio NABA"
+   ]
+  },
+  {
+   "k": "lv:pieci-lv",
+   "n": "Pieci.lv",
+   "cc": "LV",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Pieci.lv"
+   ]
+  },
+  {
+   "k": "lt:lrt-klasika",
+   "n": "LRT Klasika",
+   "cc": "LT",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "LRT Klasika"
+   ]
+  },
+  {
+   "k": "lt:lrt-opus",
+   "n": "LRT Opus",
+   "cc": "LT",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "LRT Opus"
+   ]
+  },
+  {
+   "k": "ua:radio-kultura",
+   "n": "Radio Kultura",
+   "cc": "UA",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Kultura",
+    "Культура",
+    "Radio Kultura"
+   ]
+  },
+  {
+   "k": "ua:radio-promin",
+   "n": "Radio Promin",
+   "cc": "UA",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Promin",
+    "Промінь",
+    "Radio Promin"
+   ]
+  },
+  {
+   "k": "ua:radio-aristocrats",
+   "n": "Radio Aristocrats",
+   "cc": "UA",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Aristocrats",
+    "Radio Aristocrats"
+   ]
+  },
+  {
+   "k": "tr:trt-radyo-3",
+   "n": "TRT Radyo 3",
+   "cc": "TR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radyo 3",
+    "TRT Radyo 3"
+   ]
+  },
+  {
+   "k": "tr:trt-nagme",
+   "n": "TRT Nağme",
+   "cc": "TR",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "TRT Nağme"
+   ]
+  },
+  {
+   "k": "tr:trt-turku",
+   "n": "TRT Türkü",
+   "cc": "TR",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "TRT Türkü"
+   ]
+  },
+  {
+   "k": "tr:ac-k-radyo",
+   "n": "Açık Radyo",
+   "cc": "TR",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Açık Radyo"
+   ]
+  },
+  {
+   "k": "tr:radyo-eksen",
+   "n": "Radyo Eksen",
+   "cc": "TR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radyo Eksen"
+   ]
+  },
+  {
+   "k": "il:kan-kol-hamusika",
+   "n": "Kan Kol HaMusika",
+   "cc": "IL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Kol HaMusika",
+    "Kan Kol",
+    "Kol Hamusika",
+    "Kan Kol HaMusika"
+   ]
+  },
+  {
+   "k": "il:kan-88",
+   "n": "Kan 88",
+   "cc": "IL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Kan 88"
+   ]
+  },
+  {
+   "k": "il:kan-gimel",
+   "n": "Kan Gimel",
+   "cc": "IL",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Gimel",
+    "Kan Gimel"
+   ]
+  },
+  {
+   "k": "us:kexp",
+   "n": "KEXP (Σιάτλ)",
+   "cc": "US",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "KEXP"
+   ]
+  },
+  {
+   "k": "us:wfmu",
+   "n": "WFMU (Νιου Τζέρσεϊ)",
+   "cc": "US",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "WFMU"
+   ]
+  },
+  {
+   "k": "us:kcrw-eclectic24",
+   "n": "KCRW Eclectic24",
+   "cc": "US",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "KCRW Eclectic24"
+   ]
+  },
+  {
+   "k": "us:wqxr",
+   "n": "WQXR (Νέα Υόρκη)",
+   "cc": "US",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "WQXR"
+   ]
+  },
+  {
+   "k": "us:wwoz",
+   "n": "WWOZ (Νέα Ορλεάνη)",
+   "cc": "US",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "WWOZ"
+   ]
+  },
+  {
+   "k": "us:kutx",
+   "n": "KUTX (Ώστιν)",
+   "cc": "US",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "KUTX"
+   ]
+  },
+  {
+   "k": "us:wbgo",
+   "n": "WBGO (Νιούαρκ)",
+   "cc": "US",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "WBGO"
+   ]
+  },
+  {
+   "k": "us:radio-paradise",
+   "n": "Radio Paradise",
+   "cc": "US",
+   "g": "A",
+   "hq": true,
+   "q": [
+    "Radio Paradise"
+   ]
+  },
+  {
+   "k": "us:dublab",
+   "n": "dublab",
+   "cc": "US",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "dublab"
+   ]
+  },
+  {
+   "k": "us:the-lot-radio",
+   "n": "The Lot Radio",
+   "cc": "US",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "The Lot Radio"
+   ]
+  },
+  {
+   "k": "us:wxpn",
+   "n": "WXPN (Φιλαδέλφεια)",
+   "cc": "US",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "WXPN"
+   ]
+  },
+  {
+   "k": "us:kalx",
+   "n": "KALX (Μπέρκλεϊ)",
+   "cc": "US",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "KALX"
+   ]
+  },
+  {
+   "k": "us:somafm-indie-pop-rocks",
+   "n": "SomaFM Indie Pop Rocks!",
+   "cc": "US",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Indie Pop Rocks",
+    "SomaFM Indie Pop Rocks!"
+   ]
+  },
+  {
+   "k": "us:somafm-groove-salad",
+   "n": "SomaFM Groove Salad",
+   "cc": "US",
+   "g": "E",
+   "hq": false,
+   "q": [
+    "Groove Salad",
+    "SomaFM Groove Salad"
+   ]
+  },
+  {
+   "k": "us:radio-paradise-world-etc-mix",
+   "n": "Radio Paradise World/Etc Mix",
+   "cc": "US",
+   "g": "W",
+   "hq": true,
+   "q": [
+    "Radio Paradise World",
+    "Paradise World",
+    "Radio Paradise World/Etc Mix"
+   ]
+  },
+  {
+   "k": "ca:cbc-music",
+   "n": "CBC Music",
+   "cc": "CA",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "CBC Music"
+   ]
+  },
+  {
+   "k": "ca:ici-musique",
+   "n": "ICI Musique",
+   "cc": "CA",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "ICI Musique"
+   ]
+  },
+  {
+   "k": "ca:jazz-fm91",
+   "n": "JAZZ.FM91",
+   "cc": "CA",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "JAZZ.FM91",
+    "Jazz FM 91"
+   ]
+  },
+  {
+   "k": "ca:ckut",
+   "n": "CKUT",
+   "cc": "CA",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "CKUT"
+   ]
+  },
+  {
+   "k": "ca:ciut",
+   "n": "CIUT",
+   "cc": "CA",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "CIUT"
+   ]
+  },
+  {
+   "k": "ca:cjsw",
+   "n": "CJSW",
+   "cc": "CA",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "CJSW"
+   ]
+  },
+  {
+   "k": "ca:ckua",
+   "n": "CKUA",
+   "cc": "CA",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "CKUA"
+   ]
+  },
+  {
+   "k": "ca:indie88",
+   "n": "Indie88",
+   "cc": "CA",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Indie88"
+   ]
+  },
+  {
+   "k": "mx:opus-94-5",
+   "n": "Opus 94.5",
+   "cc": "MX",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Opus 94",
+    "Opus 94.5",
+    "Opus"
+   ]
+  },
+  {
+   "k": "mx:radio-unam",
+   "n": "Radio UNAM",
+   "cc": "MX",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Radio UNAM"
+   ]
+  },
+  {
+   "k": "mx:ibero-90-9",
+   "n": "Ibero 90.9",
+   "cc": "MX",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Ibero 90.9",
+    "Ibero"
+   ]
+  },
+  {
+   "k": "mx:horizonte-107-9",
+   "n": "Horizonte 107.9",
+   "cc": "MX",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Horizonte",
+    "Horizonte 107.9"
+   ]
+  },
+  {
+   "k": "mx:reactor-105-7",
+   "n": "Reactor 105.7",
+   "cc": "MX",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Reactor",
+    "Reactor 105.7"
+   ]
+  },
+  {
+   "k": "br:radio-cultura-fm",
+   "n": "Rádio Cultura FM (Σάο Πάολο)",
+   "cc": "BR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Rádio Cultura FM"
+   ]
+  },
+  {
+   "k": "br:radio-mec-fm",
+   "n": "Rádio MEC FM",
+   "cc": "BR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Rádio MEC FM"
+   ]
+  },
+  {
+   "k": "br:radio-usp",
+   "n": "Rádio USP",
+   "cc": "BR",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Rádio USP"
+   ]
+  },
+  {
+   "k": "br:radio-batuta",
+   "n": "Rádio Batuta",
+   "cc": "BR",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "Rádio Batuta"
+   ]
+  },
+  {
+   "k": "ar:radio-nacional-clasica",
+   "n": "Radio Nacional Clásica",
+   "cc": "AR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Nacional Clásica"
+   ]
+  },
+  {
+   "k": "ar:radio-nacional-folklorica",
+   "n": "Radio Nacional Folklórica",
+   "cc": "AR",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Radio Nacional Folklórica"
+   ]
+  },
+  {
+   "k": "ar:fm-la-tribu",
+   "n": "FM La Tribu",
+   "cc": "AR",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "FM La Tribu"
+   ]
+  },
+  {
+   "k": "ar:vorterix",
+   "n": "Vorterix",
+   "cc": "AR",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Vorterix"
+   ]
+  },
+  {
+   "k": "ar:rock-pop",
+   "n": "Rock & Pop",
+   "cc": "AR",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Rock & Pop",
+    "Rock and Pop"
+   ]
+  },
+  {
+   "k": "cl:radio-beethoven",
+   "n": "Radio Beethoven",
+   "cc": "CL",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Beethoven"
+   ]
+  },
+  {
+   "k": "cl:radio-universidad-de-chile",
+   "n": "Radio Universidad de Chile",
+   "cc": "CL",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Radio Universidad de Chile"
+   ]
+  },
+  {
+   "k": "cl:radio-futuro",
+   "n": "Radio Futuro",
+   "cc": "CL",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Radio Futuro"
+   ]
+  },
+  {
+   "k": "cl:radio-zero",
+   "n": "Radio Zero",
+   "cc": "CL",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Zero"
+   ]
+  },
+  {
+   "k": "co:radio-nacional-de-colombia",
+   "n": "Radio Nacional de Colombia",
+   "cc": "CO",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "Radio Nacional de Colombia"
+   ]
+  },
+  {
+   "k": "co:radionica",
+   "n": "Radiónica",
+   "cc": "CO",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radiónica"
+   ]
+  },
+  {
+   "k": "co:javeriana-estereo",
+   "n": "Javeriana Estéreo",
+   "cc": "CO",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Javeriana Estéreo"
+   ]
+  },
+  {
+   "k": "co:un-radio",
+   "n": "UN Radio",
+   "cc": "CO",
+   "g": "X",
+   "hq": false,
+   "q": [
+    "UN Radio"
+   ]
+  },
+  {
+   "k": "pe:radio-filarmonia",
+   "n": "Radio Filarmonía",
+   "cc": "PE",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Radio Filarmonía"
+   ]
+  },
+  {
+   "k": "pe:radio-doble-nueve",
+   "n": "Radio Doble Nueve",
+   "cc": "PE",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Radio Doble Nueve"
+   ]
+  },
+  {
+   "k": "pe:radio-oxigeno",
+   "n": "Radio Oxígeno",
+   "cc": "PE",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Radio Oxígeno"
+   ]
+  },
+  {
+   "k": "jp:nhk-fm",
+   "n": "NHK-FM",
+   "cc": "JP",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "NHK FM",
+    "NHK-FM"
+   ]
+  },
+  {
+   "k": "jp:interfm897",
+   "n": "InterFM897",
+   "cc": "JP",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "InterFM897"
+   ]
+  },
+  {
+   "k": "jp:j-wave",
+   "n": "J-WAVE",
+   "cc": "JP",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "J-WAVE"
+   ]
+  },
+  {
+   "k": "jp:block-fm",
+   "n": "block.fm",
+   "cc": "JP",
+   "g": "E",
+   "hq": false,
+   "q": [
+    "block.fm"
+   ]
+  },
+  {
+   "k": "kr:kbs-classic-fm",
+   "n": "KBS Classic FM",
+   "cc": "KR",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "KBS Classic",
+    "KBS 1FM",
+    "KBS Classic FM"
+   ]
+  },
+  {
+   "k": "kr:tbs-efm",
+   "n": "TBS eFM",
+   "cc": "KR",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "TBS eFM"
+   ]
+  },
+  {
+   "k": "kr:seoul-community-radio",
+   "n": "Seoul Community Radio",
+   "cc": "KR",
+   "g": "I",
+   "hq": false,
+   "q": [
+    "Seoul Community Radio"
+   ]
+  },
+  {
+   "k": "tw:philharmonic-radio-taipei",
+   "n": "Philharmonic Radio Taipei",
+   "cc": "TW",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Philharmonic Radio",
+    "愛樂電台",
+    "Philharmonic Radio Taipei"
+   ]
+  },
+  {
+   "k": "tw:icrt",
+   "n": "ICRT",
+   "cc": "TW",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "ICRT"
+   ]
+  },
+  {
+   "k": "au:abc-classic",
+   "n": "ABC Classic",
+   "cc": "AU",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "ABC Classic"
+   ]
+  },
+  {
+   "k": "au:abc-jazz",
+   "n": "ABC Jazz",
+   "cc": "AU",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "ABC Jazz"
+   ]
+  },
+  {
+   "k": "au:double-j",
+   "n": "Double J",
+   "cc": "AU",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Double J"
+   ]
+  },
+  {
+   "k": "au:pbs-106-7",
+   "n": "PBS 106.7",
+   "cc": "AU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "PBS 106.7",
+    "PBS"
+   ]
+  },
+  {
+   "k": "au:3rrr",
+   "n": "3RRR",
+   "cc": "AU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "3RRR"
+   ]
+  },
+  {
+   "k": "au:fbi-radio",
+   "n": "FBi Radio",
+   "cc": "AU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "FBi Radio"
+   ]
+  },
+  {
+   "k": "au:rtrfm",
+   "n": "RTRFM",
+   "cc": "AU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "RTRFM"
+   ]
+  },
+  {
+   "k": "au:4zzz",
+   "n": "4ZZZ",
+   "cc": "AU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "4ZZZ"
+   ]
+  },
+  {
+   "k": "au:fine-music-sydney",
+   "n": "Fine Music Sydney",
+   "cc": "AU",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Fine Music Sydney"
+   ]
+  },
+  {
+   "k": "au:triple-j",
+   "n": "Triple J",
+   "cc": "AU",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Triple J"
+   ]
+  },
+  {
+   "k": "au:sbs-chill",
+   "n": "SBS Chill",
+   "cc": "AU",
+   "g": "W",
+   "hq": false,
+   "q": [
+    "SBS Chill"
+   ]
+  },
+  {
+   "k": "nz:rnz-concert",
+   "n": "RNZ Concert",
+   "cc": "NZ",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "RNZ Concert"
+   ]
+  },
+  {
+   "k": "nz:95bfm",
+   "n": "95bFM",
+   "cc": "NZ",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "95bFM",
+    "bFM"
+   ]
+  },
+  {
+   "k": "nz:rdu-98-5",
+   "n": "RDU 98.5",
+   "cc": "NZ",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "RDU 98.5",
+    "RDU"
+   ]
+  },
+  {
+   "k": "nz:radio-hauraki",
+   "n": "Radio Hauraki",
+   "cc": "NZ",
+   "g": "R",
+   "hq": false,
+   "q": [
+    "Hauraki",
+    "Radio Hauraki"
+   ]
+  },
+  {
+   "k": "za:fine-music-radio",
+   "n": "Fine Music Radio (Κέιπ Τάουν)",
+   "cc": "ZA",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Fine Music Radio"
+   ]
+  },
+  {
+   "k": "za:kaya-959",
+   "n": "Kaya 959",
+   "cc": "ZA",
+   "g": "S",
+   "hq": false,
+   "q": [
+    "Kaya",
+    "Kaya 959"
+   ]
+  },
+  {
+   "k": "za:bush-radio",
+   "n": "Bush Radio",
+   "cc": "ZA",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Bush Radio"
+   ]
+  },
+  {
+   "k": "in:air-raagam",
+   "n": "AIR Raagam",
+   "cc": "IN",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Raagam",
+    "AIR Raagam"
+   ]
+  },
+  {
+   "k": "in:air-vividh-bharati",
+   "n": "AIR Vividh Bharati",
+   "cc": "IN",
+   "g": "F",
+   "hq": false,
+   "q": [
+    "Vividh Bharati",
+    "AIR Vividh Bharati"
+   ]
+  },
+  {
+   "k": "lu:radio-100-7",
+   "n": "radio 100,7",
+   "cc": "LU",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "100,7",
+    "100.7",
+    "radio 100,7",
+    "radio"
+   ]
+  },
+  {
+   "k": "lu:radio-ara",
+   "n": "Radio ARA",
+   "cc": "LU",
+   "g": "C",
+   "hq": false,
+   "q": [
+    "Radio ARA"
+   ]
+  },
+  {
+   "k": "lu:eldoradio",
+   "n": "Eldoradio",
+   "cc": "LU",
+   "g": "A",
+   "hq": false,
+   "q": [
+    "Eldoradio"
+   ]
+  },
+  {
+   "k": "ru:radio-orpheus",
+   "n": "Radio Orpheus",
+   "cc": "RU",
+   "g": "K",
+   "hq": false,
+   "q": [
+    "Orpheus",
+    "Орфей",
+    "Radio Orpheus"
+   ]
+  },
+  {
+   "k": "ru:radio-jazz-89-1",
+   "n": "Radio Jazz 89.1",
+   "cc": "RU",
+   "g": "J",
+   "hq": false,
+   "q": [
+    "Radio Jazz",
+    "Radio Jazz 89.1"
+   ]
+  }
+ ]
+}
