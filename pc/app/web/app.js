@@ -109,6 +109,7 @@ async function boot() {
   setInterval(() => api("beat", {}).catch(() => {}), 10000);
   document.addEventListener("visibilitychange", () => { if (!document.hidden) { api("beat", {}).catch(() => {}); if (S.view === "player") renderRecent(); } });
   if (NATIVE) syncNative();
+  setTimeout(() => checkUpdate(b.version), 4000);
   api("beat", {}).catch(() => {});
   setInterval(pollStatus, 6000);
   setInterval(pollNow, 3500);
@@ -126,6 +127,29 @@ function indexStations() {
   S.countryName = {}; for (const c of S.catalog.countries) S.countryName[c.cc] = c.name;
 }
 let lastResolveDone = -1;
+/* ---------------------------------------------------------------- νέα έκδοση */
+const VERSION_URL = "https://raw.githubusercontent.com/fahtheo-Thodoris/djfah-radio/main/version.json";
+function newer(a, b) {
+  const x = String(a).split(".").map(Number), y = String(b).split(".").map(Number);
+  for (let i = 0; i < Math.max(x.length, y.length); i++) { if ((x[i] || 0) !== (y[i] || 0)) return (x[i] || 0) > (y[i] || 0); }
+  return false;
+}
+async function checkUpdate(current) {
+  try {
+    const v = await (await fetch(VERSION_URL + "?t=" + Date.now(), { cache: "no-store" })).json();
+    if (!v.version || !newer(v.version, current)) return;
+    const url = NATIVE ? v.apk : v.bat;
+    if (!url) return;
+    const bar = el("div", { class: "update-bar", role: "status" },
+      el("span", { text: `Υπάρχει νέα έκδοση ${v.version}` + (v.notes ? ` · ${v.notes}` : "") }),
+      el("button", { class: "btn small", text: NATIVE ? "Λήψη και εγκατάσταση" : "Λήψη", onclick: () => {
+        api("open_url", { url }).catch(() => {});
+        toast(NATIVE ? "Όταν κατέβει, άνοιξε το αρχείο και πάτα «Εγκατάσταση»· τα δεδομένα σου μένουν." : "Όταν κατέβει, κάνε διπλό κλικ στο αρχείο· τα δεδομένα σου μένουν.", 7000);
+      } }),
+      el("button", { class: "link", text: "Αργότερα", onclick: () => bar.remove() }));
+    $("main").prepend(bar);
+  } catch (e) { /* χωρίς σύνδεση ή χωρίς αρχείο έκδοσης */ }
+}
 async function pollStatus() {
   try {
     const s = await api("status");
