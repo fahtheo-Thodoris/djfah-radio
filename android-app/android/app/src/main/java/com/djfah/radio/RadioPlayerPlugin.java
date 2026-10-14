@@ -173,6 +173,19 @@ public class RadioPlayerPlugin extends Plugin {
         });
     }
 
+    /** Παίζει ήδη κάτι; (όταν η οθόνη ξανανοίγει ενώ η μουσική συνεχίζει στο παρασκήνιο) */
+    @PluginMethod
+    public void getState(PluginCall call) {
+        withController(() -> {
+            JSObject o = new JSObject();
+            boolean playing = controller != null && (controller.isPlaying() || controller.getPlayWhenReady());
+            o.put("playing", playing);
+            MediaItem cur = controller != null ? controller.getCurrentMediaItem() : null;
+            o.put("url", cur != null && cur.localConfiguration != null ? cur.localConfiguration.uri.toString() : "");
+            call.resolve(o);
+        });
+    }
+
     @PluginMethod
     public void pause(PluginCall call) {
         withController(() -> {

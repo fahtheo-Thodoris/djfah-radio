@@ -104,8 +104,11 @@ async function boot() {
   renderHome(); renderSettings(); updateResolveStatus(b.resolve);
   const wait = Math.max(0, 1500 - (Date.now() - started));
   setTimeout(() => $("splash").classList.add("done"), wait);
+  S.lastKey = b.last;
   if (b.last && getSt(b.last)) setCurrent(b.last, false);
   setInterval(() => api("beat", {}).catch(() => {}), 10000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) { api("beat", {}).catch(() => {}); if (S.view === "player") renderRecent(); } });
+  if (NATIVE) syncNative();
   api("beat", {}).catch(() => {});
   setInterval(pollStatus, 6000);
   setInterval(pollNow, 3500);
@@ -140,7 +143,9 @@ function updateResolveStatus(r) {
 }
 
 /* ---------------------------------------------------------------- πλοήγηση */
-function show(view) {
+const viewStack = [];
+function show(view, fromBack) {
+  if (!fromBack && S.view && S.view !== view) { viewStack.push(S.view); if (viewStack.length > 20) viewStack.shift(); }
   S.view = view;
   for (const v of ["home", "player", "favs", "history", "find", "settings"]) {
     $("view-" + v).hidden = v !== view;
@@ -826,6 +831,29 @@ if (NATIVE) {
   RP.addListener("meta", ({ title }) => { if (S.cur) { window.LocalAPI.recordTitle(S.cur.key, title, S.cur.st.n); pollNow(); } });
   RP.addListener("shared", ({ text }) => handleShared(text));
   RP.takeShared().then((r) => { if (r && r.text) setTimeout(() => handleShared(r.text), 2200); }).catch(() => {});
+}
+/* Κουμπί «πίσω» του Android: γυρίζει στην προηγούμενη οθόνη· στην αρχική η εφαρμογή πάει στο παρασκήνιο και η μουσική συνεχίζει */
+window.djfahBack = function () {
+  if (!$("modal").hidden) { closeModal(); return "ok"; }
+  if (S.view === "home" && S.list) { closeList(); return "ok"; }
+  if (viewStack.length) { show(viewStack.pop(), true); return "ok"; }
+  if (S.view !== "home") { show("home", true); return "ok"; }
+  return "exit";
+};
+/* Όταν η οθόνη της εφαρμογής ξανανοίγει ενώ η μουσική ήδη παίζει στο παρασκήνιο */
+async function syncNative() {
+  try {
+    const st = await RP.getState();
+    if (!st || !st.playing) return;
+    const key = S.lastKey && getSt(S.lastKey) ? S.lastKey : null;
+    if (!key) return;
+    setCurrent(key, false);
+    try { const info = await api("resolve?k=" + encodeURIComponent(key)); S.cur.streams = info.streams || []; } catch (e) { S.cur.streams = []; }
+    const i = S.cur.streams.findIndex((s) => s.url === st.url);
+    S.cur.idx = Math.max(0, i); S.cur.hls = !!(S.cur.streams[S.cur.idx] || {}).hls;
+    setPlayingUI(true); setNowText("", "Ακούς ζωντανά", "Ζωντανά");
+    show("player"); pollNow();
+  } catch (e) { /* παλιά έκδοση */ }
 }
 /* Κείμενο από το Shazam («Κοινοποίηση → DjFah Radio»): συμπληρώνει τη φόρμα του σταθμού που ακούς */
 function parseShared(text) {

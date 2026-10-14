@@ -31,7 +31,7 @@ import zipfile
 from xml.sax.saxutils import escape as xesc
 
 APP_NAME = "DjFah Radio"
-APP_VERSION = "1.2.0"
+APP_VERSION = "1.2.1"
 PORT = int(os.environ.get("DJFAH_RADIO_PORT", "48231"))
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 WEB_DIR = os.path.join(APP_DIR, "web")
@@ -1078,9 +1078,12 @@ def open_window():
     if exe:
         prof = os.path.join(DATA_DIR, "window")
         try:
-            subprocess.Popen([exe, f"--app={url}", f"--user-data-dir={prof}", "--window-size=1360,880",
-                              "--autoplay-policy=no-user-gesture-required", "--no-first-run",
-                              "--disable-features=Translate"], close_fds=True)
+            proc = subprocess.Popen([exe, f"--app={url}", f"--user-data-dir={prof}", "--window-size=1360,880",
+                                     "--autoplay-policy=no-user-gesture-required", "--no-first-run",
+                                     "--disable-background-timer-throttling", "--disable-renderer-backgrounding",
+                                     "--disable-backgrounding-occluded-windows",
+                                     "--disable-features=Translate"], close_fds=True)
+            threading.Thread(target=wait_window, args=(proc,), daemon=True).start()
             return
         except Exception as e:
             log("edge", e)
@@ -1095,11 +1098,25 @@ def already_running():
         return False
 
 
+def wait_window(proc):
+    """Το παράθυρο της εφαρμογής έχει δικό του πρόγραμμα· όταν αυτό κλείσει, κλείνει και ο διακομιστής."""
+    try:
+        proc.wait()
+    except Exception:
+        return
+    time.sleep(3)
+    if time.time() - LAST_BEAT[0] > 20 and ACTIVE_STREAMS[0] == 0:
+        log("window process ended, exiting")
+        STORE.save()
+        os._exit(0)
+
+
 def watchdog():
-    """Κλείνει τον διακομιστή όταν κλείσει το παράθυρο (χωρίς σήμα για 45 δευτερόλεπτα)."""
+    """Εφεδρικός έλεγχος: κλείνει τον διακομιστή μόνο αν το παράθυρο δεν δίνει σημεία ζωής για 30 λεπτά.
+    (Τα Windows «παγώνουν» τα παράθυρα στο παρασκήνιο, γι' αυτό ο χρόνος είναι μεγάλος.)"""
     while True:
-        time.sleep(10)
-        if time.time() - LAST_BEAT[0] > 45 and ACTIVE_STREAMS[0] == 0:
+        time.sleep(30)
+        if time.time() - LAST_BEAT[0] > 1800 and ACTIVE_STREAMS[0] == 0:
             log("window closed, exiting")
             STORE.save()
             os._exit(0)
