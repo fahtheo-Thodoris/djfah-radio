@@ -1,0 +1,8 @@
+{
+  "appId": "com.djfah.radio",
+  "appName": "DjFah Radio",
+  "webDir": "www",
+  "android": { "allowMixedContent": true, "backgroundColor": "#140d08" },
+  "server": { "androidScheme": "https", "cleartext": true },
+  "plugins": { "CapacitorHttp": { "enabled": true } }
+}

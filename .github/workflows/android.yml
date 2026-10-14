@@ -1,0 +1,60 @@
+# Χτίζει αυτόματα το APK του DjFah Radio και το δημοσιεύει στις Releases.
+name: Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "android-app/**"
+      - "pc/app/web/**"
+      - ".github/workflows/android.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Αρχεία εφαρμογής (ίδια οθόνη με τον υπολογιστή)
+        working-directory: android-app
+        run: |
+          npm ci
+          rm -rf www && mkdir -p www
+          cp -r ../pc/app/web www/web
+          cp ../pc/app/web/index.html www/index.html
+          cp ../stations.json www/stations.json
+          npx cap sync android
+
+      - name: Χτίσιμο APK
+        working-directory: android-app/android
+        env:
+          DJFAH_VERSION_CODE: ${{ github.run_number }}
+          DJFAH_VERSION_NAME: 1.1.${{ github.run_number }}
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+          cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/DjFah-Radio.apk"
+
+      - name: Δημοσίευση στις Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.1.${{ github.run_number }}
+          name: DjFah Radio 1.1.${{ github.run_number }}
+          make_latest: true
+          body: |
+            **Εγκατάσταση στο κινητό:** πάτα το αρχείο **DjFah-Radio.apk** παρακάτω, κατέβασέ το και άνοιξέ το.
+            Την πρώτη φορά το Android θα ζητήσει να επιτρέψεις την εγκατάσταση από αυτή την πηγή.
+          files: DjFah-Radio.apk

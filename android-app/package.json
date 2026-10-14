@@ -1,0 +1,14 @@
+{
+  "name": "djfah-radio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DjFah Radio - Android",
+  "scripts": { "sync": "cap sync android" },
+  "dependencies": {
+    "@capacitor/android": "6.2.1",
+    "@capacitor/core": "6.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.2.1"
+  }
+}

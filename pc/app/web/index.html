@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#140d08">
+<title>DjFah Radio</title>
+<link rel="icon" href="/web/img/icon-192.png">
+<link rel="stylesheet" href="/web/app.css">
+</head>
+<body>
+
+<!-- ============ οθόνη έναρξης ============ -->
+<div id="splash" class="splash" aria-hidden="true">
+  <div class="splash-copy">
+    <p class="eyebrow">Ραδιόφωνο με χαρακτήρα</p>
+    <h1 class="brand">DjFah <em>Radio</em></h1>
+    <p class="splash-sub" id="splashSub">Κουρδίζω τους σταθμούς…</p>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <!-- ============ πλοήγηση ============ -->
+  <nav class="nav" aria-label="Κύρια πλοήγηση">
+    <div class="nav-brand"><span class="brand small">DjFah <em>Radio</em></span></div>
+    <button class="nav-item" data-view="home" id="nav-home"><img src="/web/img/DR-08.webp" alt=""><span>Σταθμοί</span></button>
+    <button class="nav-item" data-view="player" id="nav-player"><img src="/web/img/DR-30.webp" alt=""><span>Παίζει τώρα</span></button>
+    <button class="nav-item" data-view="favs" id="nav-favs"><img src="/web/img/DR-44.webp" alt=""><span>Αγαπημένοι</span></button>
+    <button class="nav-item" data-view="history" id="nav-history"><img src="/web/img/DR-34.webp" alt=""><span>Τραγούδια</span></button>
+    <button class="nav-item" data-view="find" id="nav-find"><img src="/web/img/DR-35.webp" alt=""><span>Βρες νέους</span></button>
+    <button class="nav-item" data-view="settings" id="nav-settings"><img src="/web/img/DR-36.webp" alt=""><span>Ρυθμίσεις</span></button>
+    <div class="nav-status" id="resolveStatus"></div>
+  </nav>
+
+  <main class="main" id="main">
+
+    <!-- ============ ΣΤΑΘΜΟΙ ============ -->
+    <section class="view" id="view-home">
+      <header class="view-head">
+        <div>
+          <p class="eyebrow">Επιμέλεια DjFah · <span id="statCount">0</span> σταθμοί σε <span id="countryCount">0</span> χώρες</p>
+          <h2 class="title">Τι θα ακούσουμε απόψε;</h2>
+        </div>
+        <label class="search">
+          <img src="/web/img/DR-35.webp" alt="">
+          <input id="q" type="search" placeholder="Σταθμός ή χώρα" autocomplete="off" aria-label="Αναζήτηση σταθμού ή χώρας">
+        </label>
+      </header>
+
+      <div id="homeBrowse">
+        <h3 class="section-title">Είδη</h3>
+        <div class="genres" id="genres"></div>
+
+        <h3 class="section-title">Χώρες</h3>
+        <div class="countries" id="countries"></div>
+
+        <div id="myBlock" hidden>
+          <h3 class="section-title">Οι σταθμοί μου</h3>
+          <div class="list" id="myList"></div>
+        </div>
+      </div>
+
+      <div id="homeList" hidden>
+        <div class="list-head">
+          <button class="back" id="listBack"><img src="/web/img/DR-37.webp" alt=""><span>Πίσω</span></button>
+          <div>
+            <h3 class="list-title" id="listTitle"></h3>
+            <p class="muted" id="listSub"></p>
+          </div>
+        </div>
+        <div class="list" id="stationList"></div>
+        <p class="hidden-note" id="hiddenNote" hidden></p>
+        <details class="offline-block" id="offlineBlock" hidden>
+          <summary>Εκτός λειτουργίας (<span id="offlineCount">0</span>)</summary>
+          <p class="muted">Αυτοί οι σταθμοί δεν απαντούν εδώ και τρεις μέρες. Θα ξαναεμφανιστούν μόνοι τους όταν επιστρέψουν.</p>
+          <div class="list" id="offlineList"></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ ΠΑΙΖΕΙ ΤΩΡΑ ============ -->
+    <section class="view view-player" id="view-player" hidden>
+      <div class="player-bg" aria-hidden="true"></div>
+      <div class="player">
+        <div class="player-left">
+        <div class="radio" id="radio">
+          <img class="radio-img" src="/web/img/DR-06-radio.webp" alt="Ραδιόφωνο από ξύλο καρυδιάς">
+          <div class="dial" id="dial">
+            <div class="dial-scale" aria-hidden="true"></div>
+            <div class="dial-text">
+              <span class="dial-meta" id="dialTop">DjFah Radio</span>
+              <span class="dial-name" id="dialName">Διάλεξε σταθμό</span>
+              <span class="dial-meta" id="dialBottom">&nbsp;</span>
+            </div>
+            <div class="needle" id="needle"></div>
+          </div>
+          <div class="grille-glow" id="grilleGlow" aria-hidden="true"></div>
+          <button class="knob knob-l" id="knobVol" aria-label="Ένταση (γύρισε με τη ροδέλα ή σύρε)"><img src="/web/img/DR-06-knobL.webp" alt=""></button>
+          <button class="knob knob-r" id="knobTune" aria-label="Επόμενος σταθμός (γύρισε για αλλαγή)"><img src="/web/img/DR-06-knobR.webp" alt=""></button>
+          <span class="knob-label kl-l">Ένταση</span>
+          <span class="knob-label kl-r">Σταθμός</span>
+        </div>
+          <div class="recent">
+          <div class="recent-head">
+            <h4>Έπαιξαν πρόσφατα</h4>
+            <button class="link" id="recentAll">Όλα τα τραγούδια του σταθμού</button>
+          </div>
+          <ul id="recentList"></ul>
+        </div>
+        </div>
+
+        <div class="deck">
+          <div class="vinyl-wrap">
+            <div class="vinyl" id="vinyl">
+              <img class="vinyl-base" src="/web/img/DR-07-base.webp" alt="">
+              <div class="vinyl-label" id="vinylLabel"><span id="vinylMono">DR</span></div>
+            </div>
+            <img class="vinyl-sheen" src="/web/img/DR-07-sheen.webp" alt="" aria-hidden="true">
+          </div>
+
+          <div class="now" id="nowCard">
+            <p class="eyebrow" id="nowState">Σε αναμονή</p>
+            <p class="now-artist" id="nowArtist">&nbsp;</p>
+            <p class="now-title" id="nowTitle">Πάτησε έναν σταθμό για να ξεκινήσει η μουσική</p>
+            <div class="now-actions">
+              <button class="icon-btn big" id="btnPlay" aria-label="Αναπαραγωγή"><img src="/web/img/DR-30.webp" alt=""></button>
+              <button class="icon-btn" id="btnLike" aria-label="Μου αρέσει αυτό το τραγούδι"><img src="/web/img/DR-32.webp" alt=""></button>
+              <button class="icon-btn" id="btnSpotify" aria-label="Βάλε το στη λίστα του σταθμού στο Spotify" title="Στη λίστα του σταθμού στο Spotify"><img src="/web/img/DR-38.webp" alt=""></button>
+              <button class="icon-btn" id="btnHistory" aria-label="Τραγούδια του σταθμού"><img src="/web/img/DR-34.webp" alt=""></button>
+              <button class="icon-btn" id="btnSleep" aria-label="Χρονοδιακόπτης ύπνου"><img src="/web/img/DR-43.webp" alt=""><span class="sleep-left" id="sleepLeft"></span></button>
+              <button class="icon-btn" id="btnFavStation" aria-label="Αγαπημένος σταθμός"><img src="/web/img/DR-44.webp" alt=""></button>
+            </div>
+            <div class="quality" id="qualityRow"></div>
+          </div>
+
+          <div class="no-titles" id="noTitles" hidden>
+            <img src="/web/img/DR-50.webp" alt="">
+            <div>
+              <h4>Αυτός ο σταθμός δεν στέλνει τίτλους</h4>
+              <p>Άνοιξε το Shazam στο κινητό σου για να βρεις το τραγούδι και γράψ' το εδώ, ώστε να μπει στο αρχείο του σταθμού.</p>
+              <form class="manual" id="manualForm">
+                <input id="manArtist" placeholder="Καλλιτέχνης" autocomplete="off" aria-label="Καλλιτέχνης">
+                <input id="manTitle" placeholder="Τίτλος" autocomplete="off" aria-label="Τίτλος">
+                <button class="btn" type="submit">Προσθήκη</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ΑΓΑΠΗΜΕΝΟΙ ΣΤΑΘΜΟΙ ============ -->
+    <section class="view" id="view-favs" hidden>
+      <header class="view-head"><div><p class="eyebrow">Οι σταθμοί που σημείωσες</p><h2 class="title">Αγαπημένοι σταθμοί</h2></div></header>
+      <div class="list" id="favList"></div>
+      <div class="empty" id="favEmpty" hidden>
+        <img src="/web/img/DR-51.webp" alt="">
+        <div><h4>Δεν έχεις αγαπημένους σταθμούς ακόμα</h4><p>Πάτησε τον σελιδοδείκτη <img class="inline-ic" src="/web/img/DR-44.webp" alt=""> δίπλα σε έναν σταθμό και θα τον βρίσκεις εδώ.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ ΤΡΑΓΟΥΔΙΑ ============ -->
+    <section class="view" id="view-history" hidden>
+      <header class="view-head">
+        <div><p class="eyebrow">Αρχείο τραγουδιών ανά σταθμό</p><h2 class="title" id="histTitle">Τραγούδια</h2></div>
+        <label class="select"><span>Σταθμός</span><select id="histStation" aria-label="Σταθμός"></select></label>
+      </header>
+      <div class="toolbar">
+        <label class="toggle"><input type="checkbox" id="histLikedOnly"><span>Μόνο όσα μου αρέσουν</span></label>
+        <div class="spacer"></div>
+        <button class="btn ghost" id="btnSpotifyList"><img src="/web/img/DR-38.webp" alt=""><span>Όλα μαζί στο Spotify</span></button>
+        <button class="btn ghost" id="btnExcel"><img src="/web/img/DR-39.webp" alt=""><span>Excel</span></button>
+        <button class="btn ghost" id="btnExcelAll"><img src="/web/img/DR-39.webp" alt=""><span>Excel όλων των σταθμών</span></button>
+      </div>
+      <div class="table-wrap">
+        <table class="hist">
+          <thead><tr><th>Ημερομηνία</th><th>Ώρα</th><th>Καλλιτέχνης</th><th>Τίτλος</th><th class="col-st">Σταθμός</th><th></th></tr></thead>
+          <tbody id="histBody"></tbody>
+        </table>
+      </div>
+      <div class="empty" id="histEmpty" hidden>
+        <img src="/web/img/DR-51.webp" alt="">
+        <div><h4>Δεν υπάρχουν τραγούδια εδώ ακόμα</h4><p>Όσο ακούς έναν σταθμό, τα τραγούδια γράφονται μόνα τους σε αυτή τη λίστα.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ ΒΡΕΣ ΝΕΟΥΣ ============ -->
+    <section class="view" id="view-find" hidden>
+      <header class="view-head"><div><p class="eyebrow">Αναζήτηση σε 50.000+ σταθμούς · μόνο μουσικοί</p><h2 class="title">Βρες νέους σταθμούς</h2></div></header>
+      <form class="find-form" id="findForm">
+        <label class="select"><span>Χώρα</span><select id="findCc"></select></label>
+        <label class="select"><span>Είδος</span><select id="findTag">
+          <option value="">Όλα</option><option value="classical">Κλασική</option><option value="jazz">Τζαζ</option>
+          <option value="indie">Indie</option><option value="alternative">Εναλλακτική</option><option value="world">World</option>
+          <option value="folk">Παραδοσιακή / Folk</option><option value="electronic">Ηλεκτρονική</option><option value="ambient">Ambient</option>
+          <option value="rock">Ροκ</option><option value="soul">Soul</option><option value="blues">Blues</option><option value="experimental">Πειραματική</option>
+          <option value="greek">Ελληνική</option><option value="rebetiko">Ρεμπέτικο</option></select></label>
+        <label class="field"><span>Όνομα</span><input id="findName" placeholder="προαιρετικό" autocomplete="off"></label>
+        <label class="toggle"><input type="checkbox" id="findHq" checked><span>Μόνο υψηλή ποιότητα</span></label>
+        <button class="btn" type="submit"><img src="/web/img/DR-35.webp" alt=""><span>Αναζήτηση</span></button>
+      </form>
+      <p class="muted" id="findInfo"></p>
+      <div class="list" id="findList"></div>
+
+      <details class="add-url">
+        <summary>Έχεις τη διεύθυνση ροής ενός σταθμού; Πρόσθεσέ τον με το χέρι</summary>
+        <form id="urlForm" class="find-form">
+          <label class="field"><span>Όνομα</span><input id="urlName" required placeholder="π.χ. Ο σταθμός μου"></label>
+          <label class="field wide"><span>Διεύθυνση ροής</span><input id="urlUrl" required placeholder="https://…" type="url"></label>
+          <button class="btn" type="submit">Προσθήκη</button>
+        </form>
+      </details>
+    </section>
+
+    <!-- ============ ΡΥΘΜΙΣΕΙΣ ============ -->
+    <section class="view" id="view-settings" hidden>
+      <header class="view-head"><div><p class="eyebrow">DjFah Radio <span id="ver"></span></p><h2 class="title">Ρυθμίσεις</h2></div></header>
+      <div class="settings">
+        <div class="set-card">
+          <h4>Ποιότητα ήχου</h4>
+          <label class="toggle"><input type="checkbox" id="setHq"><span>Δείχνε μόνο σταθμούς υψηλής ποιότητας</span></label>
+          <p class="muted">Υψηλή ποιότητα: FLAC, AAC από 128 kbps, MP3 από 192 kbps. Οι υπόλοιποι κρύβονται, και μπορείς να τους δεις με ένα πάτημα στο τέλος κάθε λίστας.</p>
+        </div>
+        <div class="set-card">
+          <h4>Λίστα σταθμών</h4>
+          <p class="muted">Η επιμελημένη λίστα ανανεώνεται μόνη της από το διαδίκτυο, χωρίς νέα εγκατάσταση.</p>
+          <label class="field wide"><span>Διεύθυνση ενημέρωσης</span><input id="setCatUrl" placeholder="github.com/fahtheo-Thodoris/djfah-radio (προεπιλογή)" autocomplete="off"></label>
+          <div class="row"><button class="btn ghost" id="btnCatUpdate">Έλεγχος για νέους σταθμούς</button><button class="btn ghost" id="btnRecheckAll">Έλεγχος όλων των σταθμών τώρα</button></div>
+          <p class="muted" id="catMsg"></p>
+        </div>
+        <div class="set-card">
+          <h4>Αρχεία Excel</h4>
+          <p class="muted" id="exportDir"></p>
+          <button class="btn ghost" id="btnOpenFolder">Άνοιγμα φακέλου</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ μπάρα αναπαραγωγής ============ -->
+  <footer class="bar" id="bar" hidden>
+    <button class="bar-station" id="barStation" aria-label="Άνοιγμα οθόνης αναπαραγωγής">
+      <span class="bar-logo" id="barLogo"></span>
+      <span class="bar-text"><span class="bar-name" id="barName"></span><span class="bar-song" id="barSong"></span></span>
+    </button>
+    <div class="bar-ctrls">
+      <button class="icon-btn" id="barLike" aria-label="Μου αρέσει"><img src="/web/img/DR-32.webp" alt=""></button>
+      <button class="icon-btn big" id="barPlay" aria-label="Αναπαραγωγή"><img src="/web/img/DR-30.webp" alt=""></button>
+      <label class="vol"><img src="/web/img/DR-42.webp" alt="Ένταση"><input type="range" id="vol" min="0" max="1" step="0.01" aria-label="Ένταση"></label>
+    </div>
+  </footer>
+</div>
+
+<!-- ============ παράθυρα ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<div class="offline-screen" id="offlineScreen" hidden>
+  <img src="/web/img/DR-52.webp" alt="">
+  <h3>Χωρίς σύνδεση στο διαδίκτυο</h3>
+  <p>Ο υπολογιστής δεν βρίσκει το διαδίκτυο. Έλεγξε τη σύνδεση και πάτα «Ξανά».</p>
+  <button class="btn" id="offlineRetry">Ξανά</button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<audio id="audio" preload="none"></audio>
+<script src="/web/hls.min.js"></script>
+<script src="/web/local-api.js"></script>
+<script src="/web/app.js"></script>
+</body>
+</html>
